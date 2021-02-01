@@ -1,7 +1,6 @@
 body{
-	background: white;
+	background: #ffffff;
   	color: navy;
-     font-family:Helvetica, sans-serif;
    }
 
 main{
@@ -9,6 +8,9 @@ main{
     padding: 20px;
 }
 
+.resumefont{
+  font-family: "Times New Roman", Times;
+}
 
 h1{
 	color: orange;
@@ -24,14 +26,16 @@ li{
 nav ul{
 	background: white;
 	border-style: solid;
-	padding: 10px;
+  padding: 10px;
+  height: 20px;
 	color: orange;
 	border-radius: 10px;
 }
 
 nav ul li{
 	list-style-type: none;
-	display: inline;
+  display: inline;
+  float: right;
 	margin-right: 10px;
 	margin-left: 10px;
 	color: orange;
@@ -44,7 +48,6 @@ nav ul li a{
 
 h1.big{
 	font-size: 30px;
-	color: red;
 }
 
 section > h2{
@@ -62,38 +65,32 @@ section > h2{
 }
 
 
-.myPageLayoutGrid {
-    display: grid;
-    grid-column-gap: 0.5em;
-    grid-row-gap: 0.3em;
-
-    grid-template-rows: auto;
-grid-template-columns: auto;
-
-grid-template-areas:
-    "egArticle egAside4"
-}
-
-.myGridArticle {
-    grid-area: egArticle;
-}
-
-.myGridAside3 {
-    grid-area: egAside3;
-}
-
-.myGridAside3 {
-    grid-area: egAside4;
-}
-
-
 .coverphoto{
   height: 40%;
   width: 100%;
 }
 
-.profilephoto{
+
+#container {
+  width: 200px;
+  height: 200px;
+  display: table;
+  background-color: white; 
+  padding: 20px;       
+}
+
+#container .image-container {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#container .image-container img {
   border-radius: 10px;
+  max-width: 100%;
+  max-height: auto;        
+
+ 
 }
 
 .font{
@@ -122,3 +119,12 @@ div{
   padding: 5px;
 }
 
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.logo {list-style: none}
+.logo ul li {list-style: none; display: inline;}
+.logo img { vertical-align: middle}
