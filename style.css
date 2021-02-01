@@ -29,7 +29,7 @@ nav ul{
   padding: 10px;
   height: 20px;
 	color: orange;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 nav ul li{
@@ -125,3 +125,29 @@ div{
 .logo {list-style: none}
 .logo ul li {list-style: none; display: inline;}
 .logo img { vertical-align: middle}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  cursor: text;
+}
+
+input[type=submit] {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f3ebd7;
+  padding: 10px;
+}
